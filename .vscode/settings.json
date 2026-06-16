@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "header_file.h": "c"
+    },
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./python_file",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
+}
