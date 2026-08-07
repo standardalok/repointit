@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2tcqh73u4gvc"
+path="res://.godot/imported/Raat - Yo Yo Honey Singh.mp3-233ef13f26debe82fee3eb1c92d7b2f5.mp3str"
+
+[deps]
+
+source_file="res://assets/Raat - Yo Yo Honey Singh.mp3"
+dest_files=["res://.godot/imported/Raat - Yo Yo Honey Singh.mp3-233ef13f26debe82fee3eb1c92d7b2f5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
