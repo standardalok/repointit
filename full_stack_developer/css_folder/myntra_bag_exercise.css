@@ -1,0 +1,33 @@
+.heading1{
+    display:flex;
+    justify-content:center;
+
+}
+#a1{
+    height:50px;
+    margin:5px;
+    border:5px;
+    border-radius:10px;
+background-color:chartreuse;
+color:blue;
+font-weight:400;
+height:100dvh;
+width:100dvw;}
+#a2{
+    margin:5px;
+    border:5px;
+    border-radius:10px;
+background-color:chartreuse;
+color:blue;
+font-weight:400;
+width:100dvw;
+}
+#a3{
+    margin:5px;
+    border:5px;
+    border-radius:10px;
+background-color:chartreuse;
+color:blue;
+font-weight:400;
+width:100dvw;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="/css_folder/calculator.css"/>
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="input1">
+            <input id="in1"type="text" readonly>
+            </div>
+            <div id="but1">
+                <button class="buttons" onclick="value1=value1+'1';
+                document.getElementById('in1').value=value1">1</button>
+               <button class="buttons"onclick="value1=value1+'2';
+            document.getElementById('in1').value=value1">2</button>
+            <button class="buttons"onclick="value1=value1+'3';
+            document.getElementById('in1').value=value1">3</button>
+            <button class="buttons"onclick="value1=value1+'4';
+            document.getElementById('in1').value=value1">4</button>
+            <button class="buttons"onclick="value1=value1+'5';
+            document.getElementById('in1').value=value1">5</button>
+            <button class="buttons"onclick="value1=value1+'6';
+            document.getElementById('in1').value=value1">6</button>
+            <button class="buttons"onclick="value1=value1+'7';
+            document.getElementById('in1').value=value1">7</button>
+            <button class="buttons"onclick="value1=value1+'8';
+            document.getElementById('in1').value=value1">8</button>
+            <button class="buttons"onclick="value1=value1+'9';
+            document.getElementById('in1').value=value1">9</button>
+            <button class="buttons"onclick="value1=value1+'0';
+            document.getElementById('in1').value=value1">0</button>
+            <button class="buttons"onclick="value1=value1+'+';
+            document.getElementById('in1').value=value1">+</button>
+            <button class="buttons"onclick="value1=value1+'-';
+            document.getElementById('in1').value=value1">-</button>
+            <button class="buttons"onclick="value1=value1+'*';
+            document.getElementById('in1').value=value1">*</button>
+            <button class="buttons"onclick="value1=value1+'/';
+            document.getElementById('in1').value=value1">/</button>
+            <button class="buttons"onclick="value1=eval(value1);
+            document.getElementById('in1').value=value1">=</button>
+            <button class="buttons"onclick="value1='';
+            document.getElementById('in1').value=value1">c</button>
+            </div>
+        </div>
+        <script>
+            let value1="";
+        </script>
+    </body>
+</html>

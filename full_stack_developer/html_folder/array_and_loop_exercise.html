@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            let arr1=[5,6];
+            let s_e;
+            function r_n(arr,num,pos){
+                s_e=arr[pos-1];
+                arr[pos-1]=num;
+                for(i=0;i<arr.length;i++){
+                    let third_num=arr[pos+i];
+                    arr[pos+i]=s_e;
+                }
+                return arr;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Rock Paper Scissor Game</title>
+        <link rel="stylesheet" href="/full_stack_developer/css_folder/rock_paper_scissor.css">
+    </head>
+    <body> 
+        <h1> Rock Paper Scissor Game</h1>
+        <div id="d1">
+            <button class="button"; onclick=" let c1=cmpchoice1();  let cc1=`Rock`;won(c1,cc1);  d.innerText= `your choice=rock`;">
+                Rock 
+            </button>
+            <button class="button"; onclick="let c2=cmpchoice1();let cc2=`Paper`;won(c2,cc2);d.innerText= `your choice=paper`">
+                Paper
+            </button>
+            <button class="button"; onclick="let c3=cmpchoice1();let cc3=`Scissor`;won(c3,cc3);d.innerText= `your choice=scissor`">
+                Scissor
+            </button>
+            <button class="button"; onclick="localStorage.setItem(`win`,0);localStorage.setItem(`tie`,0);localStorage.setItem(`lost`,0);
+            result.win=0;result.tie=0;result.lost=0;a.innerText= `win=`+0;b.innerText= `lost=`+0;c.innerText= `tie=`+0">
+                Reset
+            </button>
+        </div>
+        <div id="d2">
+            <div class="status"; id="s1">
+            </div>
+            <div class="status" ; id="s2">
+            </div>
+            <div class="status" ; id="s3">
+            </div>
+        </div>
+        <div id="d3">
+            <div class="status"; id="yc"></div>
+            <div class="status" ; id="cc"></div>
+        </div>
+
+        <script src="/full_stack_developer/javasricpt_folder/javascript_1.js"></script>
+    </body>
+</html>

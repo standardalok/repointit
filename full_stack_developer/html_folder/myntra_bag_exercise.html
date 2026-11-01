@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <meta charset="utf-8">
+        <style>
+            .sos{
+                width:33%;
+                height:100px;
+                font-weight:bold;
+                background-color:lightseagreen;
+                border-radius:20px;
+                color:bisque;
+                font-size:medium;
+            }
+            .sos:hover{
+                background-color:red;
+            }
+            #jk2{
+                font-weight:bold;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="sos" onclick="carti_tem++;document.getElementById('jk1').innerText=`Your cart have ${carti_tem} items`">Add to bag</button>
+        <button class="sos" onclick="carti_tem--;document.getElementById('jk1').innerText=`Your cart have ${carti_tem} items`">Move to wishlist</button>
+        <button class="sos" onclick="carti_tem+=2;document.getElementById('jk1').innerText=`Your cart have ${carti_tem} items`">Add 1+1 sale item</button>
+        <h1 id="jk1"></h1>
+        <pre id ="jk2">
+            # add to bag button add one items to bag
+
+            # move to wishlist button remove one item from bag
+
+            # add 1+1 sale item button add two items to the cart
+        </pre>
+    </body>
+    <script>
+        let carti_tem=5;
+        document.getElementById('jk1').innerText=`Your cart have ${carti_tem} items`;
+    </script>
+</html>

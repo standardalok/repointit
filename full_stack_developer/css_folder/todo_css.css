@@ -1,0 +1,46 @@
+*{
+    padding:0px;
+    margin:0px
+}
+h1{
+    text-align:center;
+    background-color:burlywood;
+}
+.m_s{
+    padding:10px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+
+}
+input{
+    margin:10px;
+    padding:10px;
+}
+#a_b{
+
+    height:50px;
+    width:100px;
+    background-color:darkseagreen;
+    font-family:cursive;
+    font-weight:300;
+}
+#content{
+    padding:10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold;
+}
+.m_s{
+    display:grid;
+    grid-template-columns:200px 200px 120px;
+    column-gap:50px;
+    row-gap: 50px;
+}
+#delete-button{
+    height: 50px;
+    width: 100px;
+    border-radius:5px;
+    background-color:antiquewhite;
+    font-weight:300;
+}
+

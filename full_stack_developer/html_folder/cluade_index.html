@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Studio — Shop the Latest Trends</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/full_stack_developer/css_folder/calude_css.css">
+</head>
+<body>
+
+  <!-- Top strip -->
+  <div class="top-strip">Free shipping on orders above ₹999 | Easy 14-day returns</div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-main">FASHION</span><span class="logo-sub">STUDIO</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#" class="nav-link active">MEN</a>
+        <a href="#" class="nav-link">WOMEN</a>
+        <a href="#" class="nav-link">KIDS</a>
+        <a href="#" class="nav-link">HOME &amp; LIVING</a>
+        <a href="#" class="nav-link">BEAUTY</a>
+        <a href="#" class="nav-link highlight">STUDIO <span class="badge">NEW</span></a>
+      </nav>
+
+      <div class="search-bar">
+        <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 5L20.5 19l-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
+        <input type="text" placeholder="Search for products, brands and more">
+      </div>
+
+      <div class="header-actions">
+        <div class="action-item">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>
+          <span>Profile</span>
+        </div>
+        <div class="action-item">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09A6.01 6.01 0 0 1 16.5 3C19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          <span>Wishlist</span>
+        </div>
+        <div class="action-item">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.9 5H5.21l-.94-2H1zM17 18c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+          <span>Bag</span>
+          <span class="bag-count">3</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category sub-nav -->
+    <div class="sub-nav">
+      <a href="#">Topwear</a>
+      <a href="#">Bottomwear</a>
+      <a href="#">Footwear</a>
+      <a href="#">Ethnic Wear</a>
+      <a href="#">Winterwear</a>
+      <a href="#">Accessories</a>
+      <a href="#">Sportswear</a>
+      <a href="#">Sale <span class="sale-tag">Up to 70% off</span></a>
+    </div>
+  </header>
+
+  <!-- Hero banner -->
+  <section class="hero">
+    <div class="hero-slide">
+      <div class="hero-text">
+        <p class="hero-eyebrow">END OF SEASON SALE</p>
+        <h1>Style that speaks<br>before you do.</h1>
+        <p class="hero-copy">New arrivals across fashion, footwear &amp; accessories</p>
+        <button class="hero-btn">SHOP NOW</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category tiles -->
+  <section class="category-tiles">
+    <div class="tile" style="--tile-color:#ffe0e9"><div class="tile-swatch"></div><p>Ethnic Wear</p></div>
+    <div class="tile" style="--tile-color:#e0f0ff"><div class="tile-swatch"></div><p>Casual Shirts</p></div>
+    <div class="tile" style="--tile-color:#fff2d6"><div class="tile-swatch"></div><p>Footwear</p></div>
+    <div class="tile" style="--tile-color:#e6ffe6"><div class="tile-swatch"></div><p>Winterwear</p></div>
+    <div class="tile" style="--tile-color:#f0e0ff"><div class="tile-swatch"></div><p>Accessories</p></div>
+    <div class="tile" style="--tile-color:#ffe6d5"><div class="tile-swatch"></div><p>Sportswear</p></div>
+  </section>
+
+  <!-- Deals strip -->
+  <section class="deals-header">
+    <h2>Deals of the Day</h2>
+    <div class="timer">
+      <span>11</span>:<span>42</span>:<span>08</span>
+    </div>
+  </section>
+
+  <!-- Product grid -->
+  <section class="product-grid">
+    <!-- Card template repeated -->
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#ffd6e8,#ffb6d1)"></div>
+      <div class="card-discount">-40%</div>
+      <div class="card-body">
+        <p class="brand">URBAN THREAD</p>
+        <p class="desc">Slim Fit Printed Casual Shirt</p>
+        <p class="price"><span class="new">₹899</span> <span class="old">₹1,499</span> <span class="off">(40% OFF)</span></p>
+        <div class="rating">★ 4.2 <span>(1.2k)</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#d6e8ff,#b6d1ff)"></div>
+      <div class="card-discount">-55%</div>
+      <div class="card-body">
+        <p class="brand">DENIM CO.</p>
+        <p class="desc">Slim Straight Fit Blue Jeans</p>
+        <p class="price"><span class="new">₹1,349</span> <span class="old">₹2,999</span> <span class="off">(55% OFF)</span></p>
+        <div class="rating">★ 4.4 <span>(3.4k)</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#fff0d6,#ffd8a8)"></div>
+      <div class="card-discount">-30%</div>
+      <div class="card-body">
+        <p class="brand">STRIDE</p>
+        <p class="desc">Running Sports Sneakers</p>
+        <p class="price"><span class="new">₹2,099</span> <span class="old">₹2,999</span> <span class="off">(30% OFF)</span></p>
+        <div class="rating">★ 4.6 <span>(890)</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#e6d6ff,#c9a8ff)"></div>
+      <div class="card-discount">-50%</div>
+      <div class="card-body">
+        <p class="brand">WEAVE HOUSE</p>
+        <p class="desc">Embroidered A-Line Kurta</p>
+        <p class="price"><span class="new">₹999</span> <span class="old">₹1,999</span> <span class="off">(50% OFF)</span></p>
+        <div class="rating">★ 4.3 <span>(2.1k)</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#d6fff0,#a8ffd8)"></div>
+      <div class="card-discount">-25%</div>
+      <div class="card-body">
+        <p class="brand">CORE FIT</p>
+        <p class="desc">Dry-Fit Training T-Shirt</p>
+        <p class="price"><span class="new">₹599</span> <span class="old">₹799</span> <span class="off">(25% OFF)</span></p>
+        <div class="rating">★ 4.1 <span>(560)</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#ffe6d6,#ffc2a8)"></div>
+      <div class="card-discount">-45%</div>
+      <div class="card-body">
+        <p class="brand">LEATHER LOFT</p>
+        <p class="desc">Bi-Fold Leather Wallet</p>
+        <p class="price"><span class="new">₹549</span> <span class="old">₹999</span> <span class="off">(45% OFF)</span></p>
+        <div class="rating">★ 4.5 <span>(1.8k)</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#d6f0ff,#a8d8ff)"></div>
+      <div class="card-discount">-35%</div>
+      <div class="card-body">
+        <p class="brand">POLAR EDGE</p>
+        <p class="desc">Hooded Fleece Sweatshirt</p>
+        <p class="price"><span class="new">₹1,299</span> <span class="old">₹1,999</span> <span class="off">(35% OFF)</span></p>
+        <div class="rating">★ 4.4 <span>(970)</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#fce0ff,#f0b6ff)"></div>
+      <div class="card-discount">-60%</div>
+      <div class="card-body">
+        <p class="brand">GLOW LAB</p>
+        <p class="desc">Matte Liquid Lipstick Set</p>
+        <p class="price"><span class="new">₹449</span> <span class="old">₹1,099</span> <span class="off">(60% OFF)</span></p>
+        <div class="rating">★ 4.0 <span>(3.9k)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>ONLINE SHOPPING</h4>
+        <a href="#">Men</a><a href="#">Women</a><a href="#">Kids</a><a href="#">Home &amp; Living</a><a href="#">Beauty</a><a href="#">Gift Cards</a>
+      </div>
+      <div class="footer-col">
+        <h4>CUSTOMER POLICIES</h4>
+        <a href="#">Contact Us</a><a href="#">FAQ</a><a href="#">T&amp;C</a><a href="#">Track Orders</a><a href="#">Shipping</a><a href="#">Returns</a>
+      </div>
+      <div class="footer-col">
+        <h4>EXPERIENCE STUDIO APP</h4>
+        <a href="#">Download App</a>
+        <div class="app-badges">
+          <div class="badge-btn">App Store</div>
+          <div class="badge-btn">Google Play</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>KEEP IN TOUCH</h4>
+        <div class="social-row">
+          <span>FB</span><span>IG</span><span>TW</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Fashion Studio. This is a demo layout inspired by popular fashion e-commerce sites, for educational purposes only.
+    </div>
+  </footer>
+
+</body>
+</html>

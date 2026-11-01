@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            let m=0;
+            let f=function(){
+                m++;
+                console.log(m);
+            }
+           
+            let x=setInterval(f,100);
+            setTimeout(()=>clearInterval(x),10000)
+        </script>
+    </body>
+</html>
