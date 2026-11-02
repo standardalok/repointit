@@ -96,18 +96,42 @@ let search=function(){
 }
 
 
+let delete_btn_function=function(num){
+    let elem1=item_a[num-1]
+    elem1.removeChild(d_button);
+}
+
+
+let cart_num=null;
+let cart_id=document.querySelector("#counters");
+let profile_selector=document.querySelector("#profile");
+
+let dynamic_cart_numbering=function(x){
+    if(x==null || x<0 || x==0){
+        profile_selector.removeChild(cart_id);
+        return;
+    }
+    else
+        profile_selector.appendChild(cart_id);
+}
+let cart_num_increaser=function(){
+    cart_num++;
+    dynamic_cart_numbering(cart_num);
+
+}
+
+dynamic_cart_numbering(cart_num);
+
+let cart_num_decreaser=function(){
+    cart_num--;
+    dynamic_cart_numbering(cart_num);
+}
+
 let delete_function=function(num){
     let elem=item_a[num-1];
     let d_button=document.createElement("button");
     d_button.innerText="Delete";
     elem.appendChild(d_button);
     d_button.classList.add("del_button");
+    d_button.addEventListener("click",cart_num_decreaser);
 }
-
-let delete_btn_function=function(num){
-    let elem1=item_a[num-1]
-    elem1.removeChild(d_button);
-}
-
-const b1=document.querySelector(".del_button");
-b1.addEventListener("click",delete_btn_function(5));
