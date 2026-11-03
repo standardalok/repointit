@@ -109,10 +109,12 @@ let profile_selector=document.querySelector("#profile");
 let dynamic_cart_numbering=function(x){
     if(x==null || x<0 || x==0){
         profile_selector.removeChild(cart_id);
+        cart_id.innerText=x;
         return;
     }
     else
         profile_selector.appendChild(cart_id);
+            cart_id.innerText=x;
 }
 let cart_num_increaser=function(){
     cart_num++;
