@@ -72,10 +72,6 @@ let add_item=function(indexs){
     console.log(num1);
 }
 
-let bag_Adder=function(){
-    
-}
-
 
 let x5;
 
@@ -107,10 +103,16 @@ let cart_id=document.querySelector("#counters");
 let profile_selector=document.querySelector("#profile");
 
 let dynamic_cart_numbering=function(x){
-    if(x==null || x<0 || x==0){
-        profile_selector.removeChild(cart_id);
-        cart_id.innerText=x;
-        return;
+    if(x==null || x==0 || x<0){
+        if(x<0){
+            x=0
+            return
+        }
+        else{
+            profile_selector.removeChild(cart_id);
+            cart_id.innerText=x;
+            return;
+        }
     }
     else
         profile_selector.appendChild(cart_id);
@@ -136,4 +138,5 @@ let delete_function=function(num){
     elem.appendChild(d_button);
     d_button.classList.add("del_button");
     d_button.addEventListener("click",cart_num_decreaser);
+    d_button.addEventListener("click",function(){elem.removeChild(d_button)});
 }

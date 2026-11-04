@@ -3,6 +3,7 @@
     margin:0px;
     padding:0px;
 }
+
 .con{
     background-color:#fff;
     color:black;
@@ -10,6 +11,7 @@
     justify-content:space-around;
     height:75px;
     width:100%;
+    margin:0px 0px 7px 0px; 
 }
 header{
     text-align:center;
@@ -221,6 +223,7 @@ footer{
 
 .del_button{
     background-color:red;
+    margin:5px;
     font-weight:550;
     height:25px; 
     width:90%;
