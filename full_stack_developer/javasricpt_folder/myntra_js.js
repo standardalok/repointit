@@ -12,7 +12,12 @@ let product=[
     {raing:'4.7|7k',item_name:"rumali roti",item_des:"khao pehne wali chiz nhi hai",act_rate:799,disc_per:42}
 ];
 
+let delete_button_checker=[];
+for(let i=0;i<10;i++){
+    delete_button_checker[i]=0;
+}
 
+ 
 
 //----------------item selector section--------------------
 let a=document.querySelectorAll(".rc");
@@ -118,10 +123,13 @@ let dynamic_cart_numbering=function(x){
         profile_selector.appendChild(cart_id);
             cart_id.innerText=x;
 }
-let cart_num_increaser=function(){
-    cart_num++;
-    dynamic_cart_numbering(cart_num);
-
+let cart_num_increaser=function(num){
+    if(delete_button_checker[num-1]==0){
+        cart_num++;
+        dynamic_cart_numbering(cart_num);
+    }
+    else 
+        return
 }
 
 dynamic_cart_numbering(cart_num);
@@ -133,10 +141,16 @@ let cart_num_decreaser=function(){
 
 let delete_function=function(num){
     let elem=item_a[num-1];
-    let d_button=document.createElement("button");
-    d_button.innerText="Delete";
-    elem.appendChild(d_button);
-    d_button.classList.add("del_button");
-    d_button.addEventListener("click",cart_num_decreaser);
-    d_button.addEventListener("click",function(){elem.removeChild(d_button)});
+    if(delete_button_checker[num-1]==0){
+        let d_button=document.createElement("button");
+        d_button.innerText="Delete";
+        elem.appendChild(d_button);
+        d_button.classList.add("del_button");
+        d_button.addEventListener("click",cart_num_decreaser);
+        d_button.addEventListener("click",function(){elem.removeChild(d_button)});
+        d_button.addEventListener("click",function(){delete_button_checker[num-1]=0});
+        delete_button_checker[num-1]=1;
+    }
+    else
+        return;
 }
