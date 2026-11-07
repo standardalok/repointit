@@ -1,21 +1,15 @@
 h_l=[];
-let product=[
-    {raing:'4.5|1.4k',item_name:"payjama",item_des:"pehno chaap ke",act_rate:4562,disc_per:83},
-    {raing:'4.3|5k',item_name:"lungi",item_des:"ghuma ke pehno",act_rate:361,disc_per:73},
-    {raing:'4.5|1.4k',item_name:"dhoti",item_des:"ganda bohot jaldi hota hai",act_rate:80,disc_per:90},
-    {raing:'4.5|1.4k',item_name:"white wali dhoti",item_des:"isko toh pehno hi mat",act_rate:10000,disc_per:50},
-    {raing:'4.5|1.4k',item_name:"very white wali dhoti",item_des:"arram se pehno",act_rate:150,disc_per:5},
-    {raing:'1.5|4k',item_name:"shirt",item_des:"button lagake",act_rate:7000,disc_per:60},
-    {raing:'3.8|300',item_name:"narangi shirt",item_des:"dhyan se button lagana",act_rate:821,disc_per:29},
-    {raing:'5|5630',item_name:"vilayati shirt",item_des:"button ke saath zip bhi laga lena",act_rate:433,disc_per:19},
-    {raing:'4.5|1.4k',item_name:"tshirt",item_des:"turant pehn lo",act_rate:1000,disc_per:21},
-    {raing:'4.7|7k',item_name:"rumali roti",item_des:"khao pehne wali chiz nhi hai",act_rate:799,disc_per:42}
-];
+
+let Product_details=JSON.parse(localStorage.getItem("product"))
+
 
 let delete_button_checker=[];
 for(let i=0;i<10;i++){
     delete_button_checker[i]=0;
 }
+
+// localStorage.setItem("delete_button_checker",JSON.stringify(delete_button_checker))
+let delete_checker_array=JSON.parse(localStorage.getItem("delete_button_checker"));
 
  
 
@@ -43,12 +37,12 @@ let price_dis=function(price,dis_pers){
 
 let c=function(){
     for(let w=0;w<a.length;w++){
-        a[w].innerText=product[w].raing;
-        b[w].innerText=product[w].item_name;
-        d[w].innerText=product[w].item_des;
-        e[w].innerText=`Rs${Math.round(price_dis(product[w].act_rate,product[w].disc_per))}`;
-        f[w].innerText=`Rs${product[w].act_rate}`;
-        g[w].innerText=`${product[w].disc_per}%`;
+        a[w].innerText=Product_details[w].raing;
+        b[w].innerText=Product_details[w].item_name;
+        d[w].innerText=Product_details[w].item_des;
+        e[w].innerText=`Rs${Math.round(price_dis(Product_details[w].act_rate,Product_details[w].disc_per))}`;
+        f[w].innerText=`Rs${Product_details[w].act_rate}`;
+        g[w].innerText=`${Product_details[w].disc_per}%`;
 
     }
 }
@@ -83,10 +77,10 @@ let x5;
 let search=function(){
     let x2=search_bar.value;
     let x4=1;
-    for(let i=0;i<product.length;i++){
-        if(x2==product[i].item_name){
-            console.log(`${product[i].item_name} founded at ${i}th index`);
-            x5=product[i];
+    for(let i=0;i<Product_details.length;i++){
+        if(x2==Product_details[i].item_name){
+            console.log(`${Product_details[i].item_name} founded at ${i}th index`);
+            x5=Product_details[i];
             console.log(x5);
             x4=0;
             return x5;
@@ -149,7 +143,12 @@ let delete_function=function(num){
         d_button.addEventListener("click",cart_num_decreaser);
         d_button.addEventListener("click",function(){elem.removeChild(d_button)});
         d_button.addEventListener("click",function(){delete_button_checker[num-1]=0});
+        d_button.addEventListener("click",function(){delete_checker_array[num-1]=0});
+        d_button.addEventListener("click",function(){localStorage.setItem("delete_button_checker",JSON.stringify(delete_checker_array));});
+
         delete_button_checker[num-1]=1;
+        delete_checker_array[num-1]=1;
+        localStorage.setItem("delete_button_checker",JSON.stringify(delete_checker_array));
     }
     else
         return;
