@@ -1,0 +1,231 @@
+*{
+    border:0px;
+    margin:0px;
+    padding:0px;
+}
+
+.con{
+    background-color:#fff;
+    color:black;
+    display:flex;
+    justify-content:space-around;
+    height:75px;
+    width:100%;
+    margin:0px 0px 7px 0px; 
+}
+header{
+    text-align:center;
+    font-family: "Didot", "Bodoni MT", "Cinzel", "Cambria", Georgia, serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:white;
+    font-weight:900;
+    background-color:black;
+}
+#logo{
+    margin:2px;
+    padding:20px;
+    border-radius:2px;
+    display:flex;
+    justify-content:flex-start;
+}
+#p2{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    font-family:Figtree-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    margin:5px;
+    color:rgb(87, 78, 78);
+    flex-grow:0.2;
+    font-weight:bold;
+}
+#p20{
+    padding:25px 0px 25px 0px;
+    border-bottom:3px solid #fff;
+}
+#p20:hover{
+    border-bottom:3px solid red;
+
+}
+#p2 a{
+    text-decoration:none;
+    color:inherit;
+}
+#search{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+#profile{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:5px;
+    flex-grow:0.1;
+    color:rgb(87, 78, 78);
+    font-family:Figtree-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight:bold;
+}
+#profile a{
+    text-decoration:none;
+    color:inherit;
+}
+#pro1 img{
+    display:block;
+    padding:0px 10px ;
+}
+#pro1 span{
+    display:flex;
+    align-self:end;
+    justify-content:center;
+}
+#he1 span{
+    display:flex;
+    align-self:end
+}
+#he1 img{
+    display:block;
+    padding:0px 9px ;
+}
+
+#bg1 span{
+    display:flex;
+    align-self:end
+}
+#bg1 img{
+    display:block;
+    padding:0px 15px ;
+}
+#p20 sup{
+    color:rgb(165, 42, 42);
+    font-weight:900;
+}
+#slogo{
+    text-align:center;
+    background-color:#f5f5f6;
+    color:#dfdff1;
+    padding:7px;
+}
+#i1{
+    box-sizing:content-box;
+    background-color:#f5f5f6;
+    padding:10px;
+}
+#i1 input{
+    font-weight:300;
+    outline:none;
+    font-size:medium;
+    background-color:#f5f5f6;
+    font-family:Figtree-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    width:50vh;
+}
+#c1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width:100%;
+    height:100%;
+}
+
+.cb1{
+    display:flex;
+    flex-direction:column;
+    height: 300px;
+    width:100%;
+    align-items:center;
+}
+
+@media screen and (max-width: 1000px){
+    #c1{
+        flex-direction:column;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+    .cb1{
+    height: 300px;
+    width:50%;  }
+}
+
+
+.cb2{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height: 148px;
+}
+.atc{
+    font-weight:550;
+    height:25px; 
+    width:90%;
+    border-radius:10px;
+    background-color:lightgreen;
+}
+.rc{
+    font-size:12px;
+    height:20px;
+    font-weight:700;
+}
+.pn{
+    font-weight:700;
+}
+.pd{
+    color:#5f5151;
+}
+.pc{
+    font-weight:700;
+    color:#5f5151;
+}
+.pc sub{
+    text-decoration:line-through solid #5f5151 2px;
+}
+.d_price{
+    text-decoration:line-through black 2px;
+}
+footer{
+    background-color:#FAFBFC;
+    height:250px;
+    color:#5f5151;
+    font-weight:400;
+    font-family:Figtree-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; 
+}
+#up_button{
+    position:fixed;
+    top:90%;
+    bottom:80%;
+    right:5%;
+    left:95%;
+    color:crimson;
+}
+
+#s{
+    background-color:aqua;
+}
+
+#counters{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    position:relative;
+    background-color:red;
+    bottom:30%;
+    right:20%;
+    height: 20px;
+    width:20px;
+    border-radius:20px;
+    
+}
+
+
+
+
+
+
+.del_button{
+    background-color:rgb(50, 155, 204);
+    margin:5px;
+    font-weight:550;
+    height:25px; 
+    width:90%;
+    border-radius:10px;
+}

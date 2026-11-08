@@ -222,7 +222,7 @@ footer{
 
 
 .del_button{
-    background-color:blue;
+    background-color:rgb(50, 155, 204);
     margin:5px;
     font-weight:550;
     height:25px; 

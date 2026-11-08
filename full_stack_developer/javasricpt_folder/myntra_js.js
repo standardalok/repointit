@@ -3,13 +3,13 @@ h_l=[];
 let Product_details=JSON.parse(localStorage.getItem("product"))
 
 
-let delete_button_checker=[];
-for(let i=0;i<10;i++){
-    delete_button_checker[i]=0;
-}
+// let delete_button_checker=[];
+// for(let i=0;i<10;i++){
+//     delete_button_checker[i]=0;
+// }
 
 // localStorage.setItem("delete_button_checker",JSON.stringify(delete_button_checker))
-let delete_checker_array=JSON.parse(localStorage.getItem("delete_button_checker"));
+let delete_button_checker=JSON.parse(localStorage.getItem("delete_button_checker"));
 
  
 
@@ -143,12 +143,12 @@ let delete_function=function(num){
         d_button.addEventListener("click",cart_num_decreaser);
         d_button.addEventListener("click",function(){elem.removeChild(d_button)});
         d_button.addEventListener("click",function(){delete_button_checker[num-1]=0});
-        d_button.addEventListener("click",function(){delete_checker_array[num-1]=0});
-        d_button.addEventListener("click",function(){localStorage.setItem("delete_button_checker",JSON.stringify(delete_checker_array));});
+        d_button.addEventListener("click",function(){delete_button_checker[num-1]=0});
+        d_button.addEventListener("click",function(){localStorage.setItem("delete_button_checker",JSON.stringify(delete_button_checker));});
 
         delete_button_checker[num-1]=1;
-        delete_checker_array[num-1]=1;
-        localStorage.setItem("delete_button_checker",JSON.stringify(delete_checker_array));
+        delete_button_checker[num-1]=1;
+        localStorage.setItem("delete_button_checker",JSON.stringify(delete_button_checker));
     }
     else
         return;
