@@ -145,7 +145,6 @@ let delete_function=function(num){
         d_button.addEventListener("click",function(){delete_button_checker[num-1]=0});
         d_button.addEventListener("click",function(){delete_button_checker[num-1]=0});
         d_button.addEventListener("click",function(){localStorage.setItem("delete_button_checker",JSON.stringify(delete_button_checker));});
-
         delete_button_checker[num-1]=1;
         delete_button_checker[num-1]=1;
         localStorage.setItem("delete_button_checker",JSON.stringify(delete_button_checker));
@@ -153,3 +152,16 @@ let delete_function=function(num){
     else
         return;
 }
+
+let add_del_btn_on_arr_chk=function(){
+    for( let i =1;i<=10;i++){
+        if(delete_button_checker[i]==1){
+            delete_function(i);
+            console.log("yes");
+        }
+    } 
+}
+
+add_del_btn_on_arr_chk();
+
+// delete_button_checker[0] = 0;

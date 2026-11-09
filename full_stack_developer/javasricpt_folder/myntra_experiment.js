@@ -2,7 +2,7 @@ h_l=[];
 
 let Product_details=JSON.parse(localStorage.getItem("product"))
 
-
+ 
 // let delete_button_checker=[];
 // for(let i=0;i<10;i++){
 //     delete_button_checker[i]=0;
@@ -10,6 +10,7 @@ let Product_details=JSON.parse(localStorage.getItem("product"))
 
 // localStorage.setItem("delete_button_checker",JSON.stringify(delete_button_checker))
 let delete_button_checker=JSON.parse(localStorage.getItem("delete_button_checker"));
+delete_button_checker[0]=0;
 
  
 
