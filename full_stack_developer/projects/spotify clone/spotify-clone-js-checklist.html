@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spotify Clone – JS Practice Checklist</title>
+<style>
+:root{--bg:#121212;--panel:#1c1c1c;--line:#2e2e2e;--text:#f1f1f1;--muted:#a3a3a3;--accent:#1db954;--done:#6f6f6f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,sans-serif;line-height:1.5}
+main{max-width:760px;margin:0 auto;padding:32px 18px 60px}
+h1{font-size:1.7rem;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 20px}
+.bar{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:5;border-bottom:1px solid var(--line)}
+.track{height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+.fill{height:100%;width:0;background:var(--accent);transition:width .25s}
+.stat{display:flex;justify-content:space-between;font-size:.85rem;color:var(--muted);margin-top:6px}
+.stat button{background:none;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:2px 10px;cursor:pointer}
+.stat button:hover{color:var(--text);border-color:var(--muted)}
+section{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 16px 10px}
+section h2{font-size:1.05rem;margin:12px 0 2px;display:flex;justify-content:space-between;gap:10px}
+section h2 span{font-weight:400;font-size:.85rem;color:var(--muted)}
+.hint{margin:0 0 6px;color:var(--muted);font-size:.85rem}
+label{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-top:1px solid var(--line);cursor:pointer}
+label:first-of-type{border-top:0}
+input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;margin-top:3px;flex:none}
+input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+label small{display:block;color:var(--muted)}
+input:checked+div{color:var(--done);text-decoration:line-through}
+input:checked+div small{text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<h1>Spotify Clone: JS Practice Checklist</h1>
+<p class="sub">Tick things off as you build them. Progress saves in your browser.</p>
+<div class="bar">
+  <div class="track"><div class="fill" id="fill"></div></div>
+  <div class="stat"><span id="count">0 / 0 done</span><button id="reset">Reset all</button></div>
+</div>
+<div id="app"></div>
+</main>
+
+<script>
+const groups = [
+ {t:"1. Data and rendering", h:"Get the songs on screen using JavaScript, not hard-coded HTML.", i:[
+  ["Create a songs array of objects","title, artist, cover, file path, duration"],
+  ["Render song cards with forEach / map","Build the cards from the array using createElement or template strings"],
+  ["Render the sidebar playlist list from an array",""],
+  ["Add a search box that filters songs","Use filter() and includes() with toLowerCase()"],
+  ["Show a 'No songs found' empty state",""],
+  ["Group songs by artist or category","Use reduce() or Object.groupBy-style logic"]]},
+ {t:"2. Audio player basics", h:"The core of the project: the Audio object and the play bar.", i:[
+  ["Create an Audio object and play a song on card click","new Audio(src), audio.play()"],
+  ["Play / pause toggle button","Switch the icon based on audio.paused"],
+  ["Show current song title, artist and cover in the player bar",""],
+  ["Next and previous buttons","Track a currentIndex; wrap around at the ends"],
+  ["Auto-play the next song when one ends","'ended' event"],
+  ["Keyboard shortcuts","Space = play/pause, arrow keys = next/prev (keydown event)"]]},
+ {t:"3. Seek bar and time", h:"Events and math with audio time.", i:[
+  ["Update the progress bar while playing","'timeupdate' event, currentTime / duration"],
+  ["Click on the bar to jump to that position","getBoundingClientRect() and clientX"],
+  ["Show current time and total duration as mm:ss","Write a formatTime(seconds) helper; use 'loadedmetadata'"],
+  ["Make the seek knob draggable","mousedown, mousemove, mouseup (then touch events)"],
+  ["Use an <input type=range> for seeking instead","Compare both approaches"]]},
+ {t:"4. Volume", h:"", i:[
+  ["Volume slider that changes audio.volume","input event, value between 0 and 1"],
+  ["Mute / unmute button that restores the old volume",""],
+  ["Change the volume icon by level","Muted, low, high"]]},
+ {t:"5. Playlist features", h:"State management practice.", i:[
+  ["Highlight the song that is currently playing","classList.add / remove"],
+  ["Shuffle toggle","Math.random(), avoid repeating the same song"],
+  ["Repeat modes: off, repeat all, repeat one",""],
+  ["Like / unlike a song with a heart button",""],
+  ["'Liked Songs' view that shows only liked songs",""],
+  ["Create a custom playlist and add songs to it",""],
+  ["Add to queue and remove from queue","push(), splice()"]]},
+ {t:"6. Saving data (localStorage)", h:"", i:[
+  ["Save liked songs","JSON.stringify and JSON.parse"],
+  ["Remember volume and last played song after refresh",""],
+  ["Save custom playlists",""],
+  ["Add a 'Recently played' list (last 10 songs)",""],
+  ["Handle bad or empty localStorage data with try/catch",""]]},
+ {t:"7. DOM and UI interactions", h:"", i:[
+  ["Event delegation for song cards","One listener on the container, use event.target.closest()"],
+  ["Toggle the sidebar with a hamburger menu on mobile",""],
+  ["Show a toast message","'Added to Liked Songs'; remove it using setTimeout"],
+  ["Open and close a modal for 'Create playlist'",""],
+  ["Dark / light theme toggle saved in localStorage","CSS variables + dataset attribute"],
+  ["Scroll the song title if it is too long (marquee)",""],
+  ["Show a live clock or greeting: Good morning / afternoon / evening","new Date().getHours()"]]},
+ {t:"8. Async JS and APIs", h:"Level up once the basics work.", i:[
+  ["Move songs into songs.json and load with fetch()","Needs a local server (Live Server)"],
+  ["Use async / await with try / catch and show an error message",""],
+  ["Show a loading skeleton while data loads",""],
+  ["Debounce the search input","Write your own debounce(fn, delay)"],
+  ["Fetch songs from a public API","e.g. iTunes Search API (30-second previews)"],
+  ["Lazy-load cover images with IntersectionObserver",""],
+  ["Get the audio duration without playing it",""]]},
+ {t:"9. Code quality and shipping", h:"", i:[
+  ["Split the code into small functions","renderSongs, playSong, updateUI, ..."],
+  ["Keep all player data in one state object","currentIndex, isPlaying, isShuffle, repeatMode"],
+  ["Split into ES modules","player.js, ui.js, storage.js, data.js"],
+  ["Rewrite the player as a class","class MusicPlayer with methods"],
+  ["Fix bugs: rapid clicks, last song, empty playlist","Test edge cases on purpose"],
+  ["Deploy on GitHub Pages and share the link",""],
+  ["Record a YouTube video building one feature","Good practice for explaining your code"]]}
+];
+
+const KEY = "spotify-js-checklist-v1";
+let saved = {};
+try { saved = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { saved = {}; }
+
+const app = document.getElementById("app");
+groups.forEach((g, gi) => {
+  const s = document.createElement("section");
+  const items = g.i.map((it, ii) => {
+    const id = gi + "-" + ii;
+    return `<label><input type="checkbox" data-id="${id}" ${saved[id] ? "checked" : ""}><div>${it[0]}${it[1] ? `<small>${it[1]}</small>` : ""}</div></label>`;
+  }).join("");
+  s.innerHTML = `<h2>${g.t}<span data-group="${gi}"></span></h2>${g.h ? `<p class="hint">${g.h}</p>` : ""}${items}`;
+  app.appendChild(s);
+});
+
+function update() {
+  const boxes = [...document.querySelectorAll("input[type=checkbox]")];
+  const done = boxes.filter(b => b.checked).length;
+  document.getElementById("fill").style.width = (done / boxes.length * 100) + "%";
+  document.getElementById("count").textContent = done + " / " + boxes.length + " done";
+  groups.forEach((g, gi) => {
+    const gb = boxes.filter(b => b.dataset.id.startsWith(gi + "-"));
+    document.querySelector(`[data-group="${gi}"]`).textContent = gb.filter(b => b.checked).length + "/" + gb.length;
+  });
+}
+
+app.addEventListener("change", e => {
+  if (!e.target.matches("input[type=checkbox]")) return;
+  saved[e.target.dataset.id] = e.target.checked;
+  try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (err) {}
+  update();
+});
+
+document.getElementById("reset").addEventListener("click", () => {
+  if (!confirm("Clear all ticks?")) return;
+  saved = {};
+  try { localStorage.removeItem(KEY); } catch (err) {}
+  document.querySelectorAll("input[type=checkbox]").forEach(b => b.checked = false);
+  update();
+});
+
+update();
+</script>
+</body>
+</html>
