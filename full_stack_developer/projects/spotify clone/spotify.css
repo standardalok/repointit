@@ -189,16 +189,16 @@ header{
     margin:0px 0px 0px 5px;
 }
 #box_1:hover{
-    background-color:red;
+    background-color:rgb(60, 231, 8);
 }
 #box_2:hover{
-    background-color:red;
+    background-color:rgb(26, 89, 172);
 }
 #box_3:hover{
-    background-color:red;
+    background-color:rgb(235, 34, 77);
 }
 #box_4:hover{
-    background-color:red;
+    background-color:rgb(247, 183, 7);
 }
 
 #box_3{
@@ -240,8 +240,7 @@ header{
     overflow-y: auto;  
     scrollbar-width:thin;
     scrollbar-color:rgb(44, 43, 42);
-    /* scrollbar-background: transparent; */
-
+    /* scrollbar-base-color: rgb(44, 43, 42); */
 }
 
 #artist_section_1_a{
@@ -282,7 +281,7 @@ header{
 }
 
 #artist_section_1_b{
-    background-color:rgb(37, 33, 33);
+    background-color:rgb(134, 131, 128);
     width:20%;   
     margin:0% 0% 0% 5%;
     text-align:center;
@@ -296,19 +295,90 @@ header{
 .artistname_and_logo{
     margin:10px 0px 0px 10px;
     display:flex;
-    height:10%;
+    height:15%;
 }
 .artist_section_artist_logo{
-    background-color:aquamarine;
     width:20%;
-    border-radius:50%;
     height:70%;
+}
 
+.artist_section_artist_logo img{
+    width:100%;
+    border-radius:50%;
 }
 
 .artist_section_artist_name{
-    background-color:blueviolet;
+    background-color:rgb(44, 43, 42);
     width:70%;
+    margin: 0px 0px 0px 10px;
 }
 
+.artist_section_artist_name_only{
+    font-weight:bold;
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+}
 
+.Artist_only{
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+    font-size:small;
+    color:#d1c3c3
+}
+
+#banner_of_main_section{
+    height:12%;
+    background-color:black;
+    display:flex;
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+
+}
+
+.banner_of_main_section_things{
+    margin:15px 11px 10px 10px;
+    background-color:white;
+    padding:6px;
+    border-radius:15px;
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+    color:black;
+    font-weight:bold;
+    font-size:medium;
+}
+
+.banner_of_main_section_things:active{
+    background-color:red;
+    color:red;
+}
+
+#main_section_2{
+    display:flex;
+    overflow-y:auto;
+    justify-content:space-evenly;
+    overflow-x:auto;
+}
+
+.above_all_music{
+    display:flex;
+    background-color:rgb(44, 42, 44);
+    margin:1%;
+    width:40%;
+    height:7vh;
+    border-radius:5px;
+}
+
+.above_all_music_img{
+    width:17.5%;
+}
+
+.above_all_music_img img{
+    width:100%;
+    border-radius:5px;
+}
+
+.above_all_music_name{
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+    display:flex;
+    align-items:center;
+    font-size:medium;
+    font-weight:bold;
+    margin:0px 0px 0px 5px;
+
+}
