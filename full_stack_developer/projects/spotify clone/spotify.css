@@ -183,10 +183,11 @@ header{
 }
 
 #box_2{
-    background-color:rgb(66, 57, 59);
+    background-color:rgb(27, 25, 26);
     border-radius:7px;
     border:2px solid black;
     margin:0px 0px 0px 5px;
+    overflow-y:auto;
 }
 #box_1:hover{
     background-color:rgb(60, 231, 8);
@@ -383,5 +384,52 @@ header{
     font-size:medium;
     font-weight:bold;
     margin:0px 0px 0px 5px;
+}
 
+#main_section_3{
+    display:flex;
+    margin:20px 10px 10px 10px;
+
+}
+
+#getting_started{
+    background-color:cornflowerblue;
+    width:50%;
+    display:flex;
+    justify-content:space-between;
+    font-weight:bold;
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+    font-size:x-large;
+    background-color:rgb(27, 25, 26);
+    margin:7px;
+}
+
+#made_for_alok{
+    display:flex;
+    justify-content:space-between;
+    width:50%;
+    background-color:rgb(27, 25, 26);
+    margin:7px;
+
+}
+
+#Made_for{
+    font-size:smaller;
+}
+
+#made_for_alok_inner{
+    font-size:larger;
+    font-weight:900;
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+}
+
+#Show_all{
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+    font-weight:bold;
+}
+
+#main_section_4{
+    background-color:coral;
+    margin:15px;
+    height:45%;
 }
