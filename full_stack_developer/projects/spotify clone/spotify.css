@@ -433,3 +433,103 @@ header{
     margin:15px;
     height:45%;
 }
+
+#main_section_4{
+    display:flex;
+    gap:16px;
+    margin:15px;
+    overflow-x:auto;
+}
+
+.tip_card{
+    position:relative;
+    flex:0 0 340px;          /* each card keeps its width, row scrolls sideways */
+    height:225px;
+    padding:24px;
+    box-sizing:border-box;
+    border-radius:12px;
+    overflow:hidden;
+    color:white;
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+}
+
+/* different colour per card */
+.card_green { background:linear-gradient(135deg,#1f8f4d,#0d4a28); }
+.card_purple{ background:linear-gradient(135deg,#6b3fa0,#35205a); }
+.card_teal  { background:linear-gradient(135deg,#0e6f7c,#0a4552); }
+
+/* faint curved shape */
+.tip_card::after{
+    content:"";
+    position:absolute;
+    right:-80px;
+    bottom:-120px;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.05);
+}
+
+.tip_card h2{
+    font-size:30px;
+    font-weight:800;
+    letter-spacing:-1px;
+    margin-bottom:8px;
+}
+
+.tip_card p{
+    width:60%;
+    color:#cfe9ec;
+    font-size:15px;
+}
+
+.tip_preview{
+    position:absolute;
+    top:60px;
+    right:0;
+    width:90px;
+    height:100px;
+    background:rgba(0,0,0,0.35);
+    border-radius:8px 0 0 8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.tip_play{
+    width:36px;
+    height:36px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    color:black;
+    cursor:pointer;
+}
+
+.tip_actions{
+    position:absolute;
+    left:24px;
+    bottom:22px;
+    display:flex;
+    align-items:center;
+    gap:24px;
+    z-index:1;
+}
+
+.tip_btn{
+    padding:10px 20px;
+    border:none;
+    border-radius:999px;
+    background:#1ed760;
+    color:black;
+    font-weight:700;
+    cursor:pointer;
+}
+.tip_btn:hover{ transform:scale(1.05); }
+
+.tip_link{
+    color:#cfe9ec;
+    font-weight:600;
+    text-decoration:none;
+}
+.tip_link:hover{ text-decoration:underline; }
