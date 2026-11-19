@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/full_stack_developer/projects/spotify clone/spotify.css">
+    </head>
+    <body>
+          <header>
+           Spotify CLONE MADE BY ALOK
+        </header>
+        <div id="Full_header">
+            <div id="header_part1">
+                <div id="logo"><img src="/full_stack_developer/projects/spotify clone/spotify logo.png"></div>
+                <div id="home_logo"><img src="/full_stack_developer/projects/spotify clone/spotify home.png"></div>
+                <div id="search_bar">
+                    <div id="search_logo"><img src="/full_stack_developer/projects/spotify clone/search logo.png"></div>
+                    <div id="search_Input"><input type="text" placeholder="what do you want to play?"></div>
+                    <div id="Input_Right"><img src="/assets/favicon.png"></div>
+
+                </div>
+            </div>
+            <div id="header_part2">
+                <div id="Explore_premium">Explore Premium</div>
+                <div id="Install_app"> 
+                    <div id="Install_logo"><img src="/full_stack_developer/projects/spotify clone/spotify install.png"></div>
+                    <div id="Install_name">Install App</div>
+                </div>
+                <div id="Bell"><img src="/full_stack_developer/projects/spotify clone/spotify bell.png"></div>
+                <div id="Persons"><img src="/full_stack_developer/projects/spotify clone/group of people logo.png"></div>
+                <div id="Account">Account</div>
+            </div>
+        </div>
+        <div id ="body_1">
+            <div id="box_1">
+                <div id="artist_section_1">
+                    <div id="artist_section_1_a">
+                        <div id="your_library">
+                            Your Library
+                        </div>
+                        <div id="plus_icon">
+                            +
+                        </div>
+                        <div id="expand_icon">
+                            %
+                        </div>
+                    </div>
+                    <div id="artist_section_1_b">
+                    <div>
+                        Artists
+                    </div>
+                    </div>
+                </div>
+                <div id="artist_section_2" >
+                    <div class="artistname_and_logo">
+                        <div class="artist_section_artist_logo"><img src="/full_stack_developer/projects/spotify clone/01_Aether_Flux.jpg"></div>
+                        <div class="artist_section_artist_name">
+                            <div class ="artist_section_artist_name_only">Aether_Flux</div>
+                            <div class="Artist_only">Artist</div>
+                        </div>
+                    </div>
+                    <div class="artistname_and_logo">                        
+                        <div class="artist_section_artist_logo"><img src="/full_stack_developer/projects/spotify clone/02_Luna_Vibe.jpg"></div>
+                        <div class="artist_section_artist_name"> 
+                            <div class ="artist_section_artist_name_only">Luna_Vibe</div>
+                            <div class="Artist_only">Artist</div>
+                        </div></div>
+                    <div class="artistname_and_logo">                        <div class="artist_section_artist_logo"><img src="/full_stack_developer/projects/spotify clone/03_Kairo_Beats.jpg"></div>
+                        <div class="artist_section_artist_name">
+                            <div class ="artist_section_artist_name_only">Kairo_Beats</div>
+                            <div class="Artist_only">Artist</div>
+                        </div></div>
+                    <div class="artistname_and_logo">                        <div class="artist_section_artist_logo"><img src="/full_stack_developer/projects/spotify clone/04_Nova_Pulse.jpg"></div>
+                        <div class="artist_section_artist_name">
+                            <div class ="artist_section_artist_name_only">Nova_Pulse</div>
+                            <div class="Artist_only">Artist</div>
+                        </div></div>
+                    <div class="artistname_and_logo">                        <div class="artist_section_artist_logo"><img src="/full_stack_developer/projects/spotify clone/05_Orion_Sky.jpg"></div>
+                        <div class="artist_section_artist_name">
+                            <div class ="artist_section_artist_name_only">Starlight_Odyssey</div>
+                            <div class="Artist_only">Artist</div>
+                        </div></div>
+                    <div class="artistname_and_logo">                        <div class="artist_section_artist_logo"><img src="/full_stack_developer/projects/spotify clone/06_Sora_Breeze.jpg"></div>
+                        <div class="artist_section_artist_name">
+                            <div class ="artist_section_artist_name_only">Sora_Breeze</div>
+                            <div class="Artist_only">Artist</div>
+                        </div></div>
+                    <div class="artistname_and_logo">                        <div class="artist_section_artist_logo"><img src="/full_stack_developer/projects/spotify clone/07_Miles_Velvet.jpg"></div>
+                        <div class="artist_section_artist_name">
+                            <div class ="artist_section_artist_name_only">Miles_Velvet</div>
+                            <div class="Artist_only">Artist</div>
+                        </div></div>
+                    <div class="artistname_and_logo">                        <div class="artist_section_artist_logo"><img src="/full_stack_developer/projects/spotify clone/08_Willow_Folk.jpg"></div>
+                        <div class="artist_section_artist_name">
+                            <div class ="artist_section_artist_name_only">Willow_Folk</div>
+                            <div class="Artist_only">Artist</div>
+                        </div></div>
+                    <div class="artistname_and_logo">                        <div class="artist_section_artist_logo"><img src="/full_stack_developer/projects/spotify clone/09_Vex_Cyber.jpg"></div>
+                        <div class="artist_section_artist_name">
+                            <div class ="artist_section_artist_name_only">Vex_Cyber</div>
+                            <div class="Artist_only">Artist</div>
+                        </div></div>
+                    <div class="artistname_and_logo">                        <div class="artist_section_artist_logo"><img src="/full_stack_developer/projects/spotify clone/10_Mina_Pop.jpg"></div>
+                        <div class="artist_section_artist_name">
+                            <div class ="artist_section_artist_name_only">Mina_Pop</div>
+                            <div class="Artist_only">Artist</div>
+                        </div></div>
+
+                </div>
+            </div>
+            <div id="box_2">
+                <div id="banner_of_main_section">
+                    <div class="banner_of_main_section_things">All</div>
+                    <div class="banner_of_main_section_things">Music</div>
+                    <div class="banner_of_main_section_things">Podcasts</div>
+                </div>
+                <div id="main_section_2">
+                    <div class="above_all_music">
+                        <div class="above_all_music_img"><img src="/full_stack_developer/projects/spotify clone/20_Pastel_Haze.jpg"></div>
+                        <div class="above_all_music_name">New Music Hindi</div>
+                    </div>
+                    <div class="above_all_music">
+                        <div class="above_all_music_img"><img src="/full_stack_developer/projects/spotify clone/09_Cyber_Dystopia.jpg"></div>
+                        <div class="above_all_music_name">Daily Mix 2</div></div>
+                    <div class="above_all_music">
+                        <div class="above_all_music_img"><img src="/full_stack_developer/projects/spotify clone/12_Wildflower.jpg"></div>
+                        <div class="above_all_music_name">Casa Tupka Anthemo</div></div>
+                    <div class="above_all_music">
+                        <div class="above_all_music_img"><img src="/full_stack_developer/projects/spotify clone/10_Neon_Candy.jpg"></div>
+                        <div class="above_all_music_name">Moonlight</div>
+                    </div>
+                </div>
+                <div id="main_section_3">
+                    <div id="getting_started">
+                        <div id="getting_started_inner">Getting started</div>
+                        <div id="getting_started_arrow">< ></div>
+                    </div>
+                    <div id ="made_for_alok">
+                        <div> 
+                            <div id="Made_for">Made For</div>
+                            <div id="made_for_alok_inner">alok</div>
+                        </div>
+                        <div id="Show_all"> Show all</div>
+                    </div>
+                </div>
+                <div id="main_section_4">
+                    <div id="Watch_a_video">
+                        <div id="Watch_a_video_main"> 3.Watch a Video</div>
+                        <div id="Favourite_artist">Play Videos From Your Favourite Artists And Creators</div>
+                        <button id="Browse_video" class="watch_video_button">Browse Video</button>
+                        <button id="Show_more_tips" class="watch_video_button">Show More Tips</button>
+                    </div>
+                    <div id="Daily_mix">Gupta</div>
+                </div>
+                <div id="main_section_5"></div>
+                <div id="main_section_6"></div>
+                <div id="main_section_7"></div>
+                <div id="main_section_8"></div>
+                <div id="main_section_9"></div>
+                <div id="main_section_10"></div>
+                <div id="main_section_11"></div>
+                <div id="main_section_12"></div>
+                <div id="main_section_13"></div>
+                <div id="main_section_14"></div>
+                <div id="main_section_15"></div>
+                <div id="main_section_16"></div>
+                <div id="main_section_17"></div>
+                <div id="main_section_18"></div>
+                <div id="main_section_19"></div>
+                <div id="main_section_20"></div>
+            </div>
+            <div id="box_3"><</div>
+            <div id="box_4">
+                <div id="current_song_name">current song name</div>
+                <div id="play_next_previous" >play_next_previous</div>
+                <div id="spotify_advance_icons">spotify_advance_icons</div>
+            </div>
+        </div>
+    </body>
+</html>
