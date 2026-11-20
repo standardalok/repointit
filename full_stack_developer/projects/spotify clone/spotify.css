@@ -465,6 +465,15 @@ header{
     margin:10px;
     width:65%;
     background-color:green;
+    display:flex;
+    justify-content:space-between
+}
+
+.Daily_mix_content{
+    background-color:color-mix(in srgb, purple 50%, black 50%);
+    width:30%;
+    margin:10px;
+    border-radius:10px;
 }
 
 /* h1{
@@ -500,3 +509,4 @@ header{
     color:rgb(172, 157, 157);
     font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
 }
+
