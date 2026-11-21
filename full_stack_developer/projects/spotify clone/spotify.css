@@ -436,7 +436,7 @@ header{
 
 #Watch_a_video{
     margin:10px;
-    width:35%;
+    width:50%;
     background:linear-gradient(180deg,#007585 0%,#005F6E 55%,#003948 100%);
     border-radius:15px;
     color:black;
@@ -463,16 +463,16 @@ header{
 
 #Daily_mix{
     margin:10px;
-    width:65%;
-    background-color:green;
+    width:50%;
+    /* background-color:green; */
     display:flex;
     justify-content:space-between
 }
 
 .Daily_mix_content{
-    background-color:color-mix(in srgb, purple 50%, black 50%);
+    /* background-color:color-mix(in srgb, purple 50%, black 50%); */
     width:30%;
-    margin:10px;
+    margin:0px 10px 10px 10px;
     border-radius:10px;
 }
 
@@ -510,3 +510,42 @@ header{
     font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
 }
 
+.Daily_mix_content_image{
+    height:70%;
+    padding:5px;
+    border-radius:5%;
+}
+
+.Daily_mix_content_image img{
+    height:100%;
+    width:100%;
+    border-radius:5%;
+}
+
+.Daily_mix_content_message{
+    height:30%;
+    width:100%;
+    background-color:transparent;
+    color:rgb(160, 148, 148);
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+    display:flex;
+    font-size:smaller;
+    margin:2px 0px 0px 10px;
+    font-weight:bold;
+}
+
+#main_section_5{
+    display:flex;
+    justify-content:space-between;
+}
+
+#main_section_5_1{
+    background-color:#241d1d;
+    width:60%
+}
+
+
+#main_section_5_2{
+    background-color:#b3b3b3;
+    width:40%
+}
