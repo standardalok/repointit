@@ -388,7 +388,7 @@ header{
 
 #main_section_3{
     display:flex;
-    margin:20px 10px 10px 10px;
+    margin:20px 10px 10px 25px;
 
 }
 
@@ -474,6 +474,7 @@ header{
     width:30%;
     margin:0px 10px 10px 10px;
     border-radius:10px;
+    height:100%;
 }
 
 /* h1{
@@ -564,6 +565,23 @@ header{
 }
 
 #main_section_6{
-    height:40%;
-    background-color:#b3b3b3
+    display:flex;
+    justify-content:space-between;
+    height:50%;
+    /* background-color:#b3b3b3 */
+}
+
+#main_section_7{
+    display:flex;
+    margin:0px 0px 0px 10px
+}
+
+#Show_all1{
+    justify-content:right;
+    margin:15px 20px 0px 0px
+}
+
+#main_section_8{
+    display:flex;
+    height:80%;
 }
