@@ -585,3 +585,64 @@ header{
     display:flex;
     height:80%;
 }
+
+#main_section_9{
+    display:flex;
+    margin:0px 0px 0px 15px
+}
+
+/* Album image container */
+
+.Daily_mix_content_image {
+    position: relative;
+    height: 70%;
+    padding: 5px;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.Daily_mix_content_image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+/* Play button */
+
+.hover_play_button {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+    height: 50px;
+    width: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #1ed760;
+    color: black;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    opacity: 0;
+    transform: translateY(10px);
+
+    transition: all 0.25s ease;
+}
+
+/* Show button on hover */
+
+.Daily_mix_content:hover .hover_play_button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button hover effect */
+
+.hover_play_button:hover {
+    transform: scale(1.1);
+    background-color: #3be477;
+}
