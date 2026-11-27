@@ -515,6 +515,7 @@ header{
 }
 
 .Daily_mix_content_image{
+    position:relative;
     height:70%;
     padding:5px;
     border-radius:5%;
@@ -525,6 +526,24 @@ header{
     width:100%;
     border-radius:5%;
 }
+
+.ganja_lover{
+    background-color:rgb(255, 5, 5);
+    position:absolute;
+    bottom:10px;
+    right:15px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    opacity:0;
+    transition:opacity 0.4s;
+    border:green solid 2px;
+}
+
+.Daily_mix_content_image:hover .ganja_lover{
+    opacity:1;
+}
+
 
 .Daily_mix_content_message{
     height:30%;
@@ -594,15 +613,13 @@ header{
     margin:0px 0px 0px 15px
 }
 
-#ganja_lover{
-    background-color:red;
-    position:absolute;
-}
+
 
 #main_section_10{
     display:flex;
-    justify-content:space-between;
-    margin:10px;
+    justify-content:space-around;
+    margin:50px 40px 50px 40px;
+    /* background-color:red; */
 }
 
 hr{
@@ -615,6 +632,8 @@ hr{
 #main_section_10_5{
     display:flex;
     width:30%;
+    justify-content:space-evenly;
+    align-items:left;
     /* background-color:yellow */
 }
 
@@ -626,6 +645,7 @@ hr{
     background-color:#a2afb1;
     display:flex;
     align-items:center;
+
 }
 
 .main_section_10_5_img img{
@@ -634,4 +654,29 @@ hr{
     margin:0px 10px 0px 10px;
     width:50%;
     height:50%;
+}
+
+.footer_head{
+    font-weight:bold;
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+    font-size:large;
+
+}
+
+.footer_cont{
+    font-family:"Figtree", "Circular Std", Helvetica, Arial, sans-serif;
+    color:#a2afb1;
+    font-size:medium;
+    font-weight:bold;
+}
+
+#main_section_11{
+    display:flex;
+    margin:50px ;
+    justify-content:space-between;
+}
+
+a{
+    text-decoration:none;
+    color:white;
 }
